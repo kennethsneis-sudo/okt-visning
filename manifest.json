@@ -1,0 +1,1263 @@
+{
+ "generated": "2026-07-03",
+ "app": "Øktvisning",
+ "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
+ "sessions": [
+  {
+   "id": "okt_2026-07-01",
+   "date": "2026-07-01",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6871,
+   "file": "okt_2026-07-01.json"
+  },
+  {
+   "id": "okt_2026-06-24",
+   "date": "2026-06-24",
+   "name": "Endurance 1:30",
+   "type": "Endurance",
+   "duration_s": 6024,
+   "file": "okt_2026-06-24.json"
+  },
+  {
+   "id": "okt_2026-06-22",
+   "date": "2026-06-22",
+   "name": "Recovery 1:00 Z1",
+   "type": "Recovery",
+   "duration_s": 3807,
+   "file": "okt_2026-06-22.json"
+  },
+  {
+   "id": "okt_2026-06-21",
+   "date": "2026-06-21",
+   "name": "Endurance 1:30 Z2",
+   "type": "Endurance",
+   "duration_s": 5417,
+   "file": "okt_2026-06-21.json"
+  },
+  {
+   "id": "okt_2026-06-20",
+   "date": "2026-06-20",
+   "name": "Endurance 2h Z2 (eller off om Sommerfest krever det)",
+   "type": "Endurance",
+   "duration_s": 6877,
+   "file": "okt_2026-06-20.json"
+  },
+  {
+   "id": "okt_2026-06-18",
+   "date": "2026-06-18",
+   "name": "Endurance 2h",
+   "type": "Endurance",
+   "duration_s": 9472,
+   "file": "okt_2026-06-18.json"
+  },
+  {
+   "id": "okt_2026-06-15",
+   "date": "2026-06-15",
+   "name": "Endurance 2h",
+   "type": "Endurance",
+   "duration_s": 7572,
+   "file": "okt_2026-06-15.json"
+  },
+  {
+   "id": "okt_2026-06-12",
+   "date": "2026-06-12",
+   "name": "Endurance 90min",
+   "type": "Endurance",
+   "duration_s": 5297,
+   "file": "okt_2026-06-12.json"
+  },
+  {
+   "id": "okt_2026-06-11",
+   "date": "2026-06-11",
+   "name": "THP 30-20-10-20-30",
+   "type": "Terskel",
+   "duration_s": 12289,
+   "file": "okt_2026-06-11.json"
+  },
+  {
+   "id": "okt_2026-06-10",
+   "date": "2026-06-10",
+   "name": "3h Endurance med 5x7 min SS (300w)",
+   "type": "Sweet Spot",
+   "duration_s": 10735,
+   "file": "okt_2026-06-10.json"
+  },
+  {
+   "id": "okt_2026-06-08",
+   "date": "2026-06-08",
+   "name": "Endurance 2h",
+   "type": "Endurance",
+   "duration_s": 10349,
+   "file": "okt_2026-06-08.json"
+  },
+  {
+   "id": "okt_2026-06-05",
+   "date": "2026-06-05",
+   "name": "Endurance 90min",
+   "type": "Endurance",
+   "duration_s": 6200,
+   "file": "okt_2026-06-05.json"
+  },
+  {
+   "id": "okt_2026-06-04",
+   "date": "2026-06-04",
+   "name": "THP 3x15 min @ 305-315W m 6 min Z1-pause",
+   "type": "Terskel",
+   "duration_s": 10159,
+   "file": "okt_2026-06-04.json"
+  },
+  {
+   "id": "okt_2026-06-02",
+   "date": "2026-06-02",
+   "name": "Endurance 2h",
+   "type": "Endurance",
+   "duration_s": 7708,
+   "file": "okt_2026-06-02.json"
+  },
+  {
+   "id": "okt_2026-06-01",
+   "date": "2026-06-01",
+   "name": "Recovery 1:00 Z1",
+   "type": "Recovery",
+   "duration_s": 6166,
+   "file": "okt_2026-06-01.json"
+  },
+  {
+   "id": "okt_2026-05-31",
+   "date": "2026-05-31",
+   "name": "Recovery 1:00 Z1",
+   "type": "Recovery",
+   "duration_s": 4374,
+   "file": "okt_2026-05-31.json"
+  },
+  {
+   "id": "okt_2026-05-29",
+   "date": "2026-05-29",
+   "name": "Pre-race 45 min Z1 + 3x12s openers + 1x3 min @ race-pace",
+   "type": "Recovery",
+   "duration_s": 5216,
+   "file": "okt_2026-05-29.json"
+  },
+  {
+   "id": "okt_2026-05-27",
+   "date": "2026-05-27",
+   "name": "Recovery 60 min",
+   "type": "Recovery",
+   "duration_s": 4565,
+   "file": "okt_2026-05-27.json"
+  },
+  {
+   "id": "okt_2026-05-26",
+   "date": "2026-05-26",
+   "name": "Recovery 60 min",
+   "type": "Recovery",
+   "duration_s": 3423,
+   "file": "okt_2026-05-26.json"
+  },
+  {
+   "id": "okt_2026-05-20",
+   "date": "2026-05-20",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8629,
+   "file": "okt_2026-05-20.json"
+  },
+  {
+   "id": "okt_2026-05-18",
+   "date": "2026-05-18",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7484,
+   "file": "okt_2026-05-18.json"
+  },
+  {
+   "id": "okt_2026-05-17",
+   "date": "2026-05-17",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 9494,
+   "file": "okt_2026-05-17.json"
+  },
+  {
+   "id": "okt_2026-05-16",
+   "date": "2026-05-16",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7863,
+   "file": "okt_2026-05-16.json"
+  },
+  {
+   "id": "okt_2026-05-11",
+   "date": "2026-05-11",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 4130,
+   "file": "okt_2026-05-11.json"
+  },
+  {
+   "id": "okt_2026-05-08",
+   "date": "2026-05-08",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8429,
+   "file": "okt_2026-05-08.json"
+  },
+  {
+   "id": "okt_2026-05-06",
+   "date": "2026-05-06",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8066,
+   "file": "okt_2026-05-06.json"
+  },
+  {
+   "id": "okt_2026-05-04",
+   "date": "2026-05-04",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7948,
+   "file": "okt_2026-05-04.json"
+  },
+  {
+   "id": "okt_2026-05-03",
+   "date": "2026-05-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10872,
+   "file": "okt_2026-05-03.json"
+  },
+  {
+   "id": "okt_2026-04-30",
+   "date": "2026-04-30",
+   "name": "1×4 min + 1×5 min THP",
+   "type": "Terskel",
+   "duration_s": 7650,
+   "file": "okt_2026-04-30.json"
+  },
+  {
+   "id": "okt_2026-04-29",
+   "date": "2026-04-29",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8610,
+   "file": "okt_2026-04-29.json"
+  },
+  {
+   "id": "okt_2026-04-28",
+   "date": "2026-04-28",
+   "name": "1×5 min + 3×6 min THP",
+   "type": "Terskel",
+   "duration_s": 10931,
+   "file": "okt_2026-04-28.json"
+  },
+  {
+   "id": "okt_2026-04-27",
+   "date": "2026-04-27",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 5477,
+   "file": "okt_2026-04-27.json"
+  },
+  {
+   "id": "okt_2026-04-25",
+   "date": "2026-04-25",
+   "name": "2×4 min THP + Løp",
+   "type": "Terskel",
+   "duration_s": 5450,
+   "file": "okt_2026-04-25.json"
+  },
+  {
+   "id": "okt_2026-04-24",
+   "date": "2026-04-24",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8010,
+   "file": "okt_2026-04-24.json"
+  },
+  {
+   "id": "okt_2026-04-22",
+   "date": "2026-04-22",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 9141,
+   "file": "okt_2026-04-22.json"
+  },
+  {
+   "id": "okt_2026-04-21",
+   "date": "2026-04-21",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8408,
+   "file": "okt_2026-04-21.json"
+  },
+  {
+   "id": "okt_2026-04-16",
+   "date": "2026-04-16",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6721,
+   "file": "okt_2026-04-16.json"
+  },
+  {
+   "id": "okt_2026-04-13",
+   "date": "2026-04-13",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7874,
+   "file": "okt_2026-04-13.json"
+  },
+  {
+   "id": "okt_2026-04-10",
+   "date": "2026-04-10",
+   "name": "2×6 min THP",
+   "type": "Terskel",
+   "duration_s": 7667,
+   "file": "okt_2026-04-10.json"
+  },
+  {
+   "id": "okt_2026-04-09",
+   "date": "2026-04-09",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7425,
+   "file": "okt_2026-04-09.json"
+  },
+  {
+   "id": "okt_2026-04-08",
+   "date": "2026-04-08",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 5659,
+   "file": "okt_2026-04-08.json"
+  },
+  {
+   "id": "okt_2026-04-05",
+   "date": "2026-04-05",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 25192,
+   "file": "okt_2026-04-05.json"
+  },
+  {
+   "id": "okt_2026-04-04",
+   "date": "2026-04-04",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 24622,
+   "file": "okt_2026-04-04.json"
+  },
+  {
+   "id": "okt_2026-04-03",
+   "date": "2026-04-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 21713,
+   "file": "okt_2026-04-03.json"
+  },
+  {
+   "id": "okt_2026-04-02",
+   "date": "2026-04-02",
+   "name": "1×3 min + 2×10 min + 1×65s THP",
+   "type": "Terskel",
+   "duration_s": 25873,
+   "file": "okt_2026-04-02.json"
+  },
+  {
+   "id": "okt_2026-04-01",
+   "date": "2026-04-01",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 26195,
+   "file": "okt_2026-04-01.json"
+  },
+  {
+   "id": "okt_2026-03-31",
+   "date": "2026-03-31",
+   "name": "1×16 min + 1×5 min + 3×19 min + 2×5s + 2×15s + 1×20s + 2×10s SS",
+   "type": "Sweet Spot",
+   "duration_s": 25275,
+   "file": "okt_2026-03-31.json"
+  },
+  {
+   "id": "okt_2026-03-30",
+   "date": "2026-03-30",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 28844,
+   "file": "okt_2026-03-30.json"
+  },
+  {
+   "id": "okt_2026-03-29",
+   "date": "2026-03-29",
+   "name": "1×33 min + 2×20s + 1×10 min + 1×17 min + 1×35s + 1×5s + 1×15s SS",
+   "type": "Sweet Spot",
+   "duration_s": 26082,
+   "file": "okt_2026-03-29.json"
+  },
+  {
+   "id": "okt_2026-03-26",
+   "date": "2026-03-26",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 9850,
+   "file": "okt_2026-03-26.json"
+  },
+  {
+   "id": "okt_2026-03-25",
+   "date": "2026-03-25",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8109,
+   "file": "okt_2026-03-25.json"
+  },
+  {
+   "id": "okt_2026-03-23",
+   "date": "2026-03-23",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6527,
+   "file": "okt_2026-03-23.json"
+  },
+  {
+   "id": "okt_2026-03-22",
+   "date": "2026-03-22",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 9012,
+   "file": "okt_2026-03-22.json"
+  },
+  {
+   "id": "okt_2026-03-21",
+   "date": "2026-03-21",
+   "name": "1×39 min + 1×18 min + 1×3 min Tempo",
+   "type": "Tempo",
+   "duration_s": 10842,
+   "file": "okt_2026-03-21.json"
+  },
+  {
+   "id": "okt_2026-03-20",
+   "date": "2026-03-20",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7591,
+   "file": "okt_2026-03-20.json"
+  },
+  {
+   "id": "okt_2026-03-18",
+   "date": "2026-03-18",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8144,
+   "file": "okt_2026-03-18.json"
+  },
+  {
+   "id": "okt_2026-01-10",
+   "date": "2026-01-10",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 27241,
+   "file": "okt_2026-01-10.json"
+  },
+  {
+   "id": "okt_2026-01-09",
+   "date": "2026-01-09",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 21714,
+   "file": "okt_2026-01-09.json"
+  },
+  {
+   "id": "okt_2026-01-08",
+   "date": "2026-01-08",
+   "name": "1×74 min SS",
+   "type": "Sweet Spot",
+   "duration_s": 14472,
+   "file": "okt_2026-01-08.json"
+  },
+  {
+   "id": "okt_2026-01-07",
+   "date": "2026-01-07",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 15155,
+   "file": "okt_2026-01-07.json"
+  },
+  {
+   "id": "okt_2026-01-06",
+   "date": "2026-01-06",
+   "name": "2×20 min SS",
+   "type": "Sweet Spot",
+   "duration_s": 16200,
+   "file": "okt_2026-01-06.json"
+  },
+  {
+   "id": "okt_2026-01-03",
+   "date": "2026-01-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 15055,
+   "file": "okt_2026-01-03.json"
+  },
+  {
+   "id": "okt_2026-01-02",
+   "date": "2026-01-02",
+   "name": "3×10s + 2×15 min SS",
+   "type": "Sweet Spot",
+   "duration_s": 21430,
+   "file": "okt_2026-01-02.json"
+  },
+  {
+   "id": "okt_2026-01-01",
+   "date": "2026-01-01",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 11710,
+   "file": "okt_2026-01-01.json"
+  },
+  {
+   "id": "okt_2025-12-31",
+   "date": "2025-12-31",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 20865,
+   "file": "okt_2025-12-31.json"
+  },
+  {
+   "id": "okt_2025-12-30",
+   "date": "2025-12-30",
+   "name": "1×5s + 2×25 min Tempo",
+   "type": "Tempo",
+   "duration_s": 20292,
+   "file": "okt_2025-12-30.json"
+  },
+  {
+   "id": "okt_2025-12-29",
+   "date": "2025-12-29",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 22026,
+   "file": "okt_2025-12-29.json"
+  },
+  {
+   "id": "okt_2025-12-28",
+   "date": "2025-12-28",
+   "name": "2×5s + 1×15s + 1×18 min + 1×27 min Tempo",
+   "type": "Tempo",
+   "duration_s": 21835,
+   "file": "okt_2025-12-28.json"
+  },
+  {
+   "id": "okt_2025-12-27",
+   "date": "2025-12-27",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6903,
+   "file": "okt_2025-12-27.json"
+  },
+  {
+   "id": "okt_2025-12-26",
+   "date": "2025-12-26",
+   "name": "2×20 min + 1×10s Tempo",
+   "type": "Tempo",
+   "duration_s": 26697,
+   "file": "okt_2025-12-26.json"
+  },
+  {
+   "id": "okt_2025-12-25",
+   "date": "2025-12-25",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10438,
+   "file": "okt_2025-12-25.json"
+  },
+  {
+   "id": "okt_2025-11-29",
+   "date": "2025-11-29",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 7984,
+   "file": "okt_2025-11-29.json"
+  },
+  {
+   "id": "okt_2025-11-16",
+   "date": "2025-11-16",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 12852,
+   "file": "okt_2025-11-16.json"
+  },
+  {
+   "id": "okt_2025-11-15",
+   "date": "2025-11-15",
+   "name": "2×50 min + 1×14 min + 1×36 min Tempo",
+   "type": "Tempo",
+   "duration_s": 15668,
+   "file": "okt_2025-11-15.json"
+  },
+  {
+   "id": "okt_2025-11-11",
+   "date": "2025-11-11",
+   "name": "1×10s + 1×40 min + 2×41 min Tempo",
+   "type": "Tempo",
+   "duration_s": 10580,
+   "file": "okt_2025-11-11.json"
+  },
+  {
+   "id": "okt_2025-11-09",
+   "date": "2025-11-09",
+   "name": "1×10s + 1×35 min + 1×34 min + 1×36 min + 1×5s + 1×15s Tempo",
+   "type": "Tempo",
+   "duration_s": 11026,
+   "file": "okt_2025-11-09.json"
+  },
+  {
+   "id": "okt_2025-11-07",
+   "date": "2025-11-07",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7857,
+   "file": "okt_2025-11-07.json"
+  },
+  {
+   "id": "okt_2025-11-02",
+   "date": "2025-11-02",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 15833,
+   "file": "okt_2025-11-02.json"
+  },
+  {
+   "id": "okt_2025-10-31",
+   "date": "2025-10-31",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10379,
+   "file": "okt_2025-10-31.json"
+  },
+  {
+   "id": "okt_2025-10-20",
+   "date": "2025-10-20",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8736,
+   "file": "okt_2025-10-20.json"
+  },
+  {
+   "id": "okt_2025-10-11",
+   "date": "2025-10-11",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 25496,
+   "file": "okt_2025-10-11.json"
+  },
+  {
+   "id": "okt_2025-10-10",
+   "date": "2025-10-10",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 28340,
+   "file": "okt_2025-10-10.json"
+  },
+  {
+   "id": "okt_2025-10-09",
+   "date": "2025-10-09",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 8720,
+   "file": "okt_2025-10-09.json"
+  },
+  {
+   "id": "okt_2025-10-08",
+   "date": "2025-10-08",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 27216,
+   "file": "okt_2025-10-08.json"
+  },
+  {
+   "id": "okt_2025-10-07",
+   "date": "2025-10-07",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 8404,
+   "file": "okt_2025-10-07.json"
+  },
+  {
+   "id": "okt_2025-10-03",
+   "date": "2025-10-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10826,
+   "file": "okt_2025-10-03.json"
+  },
+  {
+   "id": "okt_2025-09-30",
+   "date": "2025-09-30",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 4409,
+   "file": "okt_2025-09-30.json"
+  },
+  {
+   "id": "okt_2025-09-28",
+   "date": "2025-09-28",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 15747,
+   "file": "okt_2025-09-28.json"
+  },
+  {
+   "id": "okt_2025-09-27",
+   "date": "2025-09-27",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10540,
+   "file": "okt_2025-09-27.json"
+  },
+  {
+   "id": "okt_2025-09-26",
+   "date": "2025-09-26",
+   "name": "3×15 min THP",
+   "type": "Terskel",
+   "duration_s": 10526,
+   "file": "okt_2025-09-26.json"
+  },
+  {
+   "id": "okt_2025-09-25",
+   "date": "2025-09-25",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7818,
+   "file": "okt_2025-09-25.json"
+  },
+  {
+   "id": "okt_2025-09-24",
+   "date": "2025-09-24",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8863,
+   "file": "okt_2025-09-24.json"
+  },
+  {
+   "id": "okt_2025-09-22",
+   "date": "2025-09-22",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 4337,
+   "file": "okt_2025-09-22.json"
+  },
+  {
+   "id": "okt_2025-09-21",
+   "date": "2025-09-21",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 11446,
+   "file": "okt_2025-09-21.json"
+  },
+  {
+   "id": "okt_2025-09-18",
+   "date": "2025-09-18",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6544,
+   "file": "okt_2025-09-18.json"
+  },
+  {
+   "id": "okt_2025-09-17",
+   "date": "2025-09-17",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6175,
+   "file": "okt_2025-09-17.json"
+  },
+  {
+   "id": "okt_2025-09-10",
+   "date": "2025-09-10",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 5086,
+   "file": "okt_2025-09-10.json"
+  },
+  {
+   "id": "okt_2025-09-09",
+   "date": "2025-09-09",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 5575,
+   "file": "okt_2025-09-09.json"
+  },
+  {
+   "id": "okt_2025-09-05",
+   "date": "2025-09-05",
+   "name": "2×10s + 1×11 min + 1×15s THP",
+   "type": "Terskel",
+   "duration_s": 24103,
+   "file": "okt_2025-09-05.json"
+  },
+  {
+   "id": "okt_2025-09-04",
+   "date": "2025-09-04",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 28326,
+   "file": "okt_2025-09-04.json"
+  },
+  {
+   "id": "okt_2025-09-03",
+   "date": "2025-09-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 32799,
+   "file": "okt_2025-09-03.json"
+  },
+  {
+   "id": "okt_2025-09-02",
+   "date": "2025-09-02",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 27784,
+   "file": "okt_2025-09-02.json"
+  },
+  {
+   "id": "okt_2025-09-01_2",
+   "date": "2025-09-01",
+   "name": "Recovery + Endurance",
+   "type": "Endurance",
+   "duration_s": 12408,
+   "file": "okt_2025-09-01_2.json"
+  },
+  {
+   "id": "okt_2025-09-01",
+   "date": "2025-09-01",
+   "name": "Recovery + Endurance",
+   "type": "Endurance",
+   "duration_s": 3227,
+   "file": "okt_2025-09-01.json"
+  },
+  {
+   "id": "okt_2025-08-31",
+   "date": "2025-08-31",
+   "name": "Recovery + Løp",
+   "type": "Recovery",
+   "duration_s": 714,
+   "file": "okt_2025-08-31.json"
+  },
+  {
+   "id": "okt_2025-08-29",
+   "date": "2025-08-29",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 9353,
+   "file": "okt_2025-08-29.json"
+  },
+  {
+   "id": "okt_2025-08-26",
+   "date": "2025-08-26",
+   "name": "1×14 min + 1×6 min Tempo + Løp",
+   "type": "Tempo",
+   "duration_s": 7543,
+   "file": "okt_2025-08-26.json"
+  },
+  {
+   "id": "okt_2025-08-21",
+   "date": "2025-08-21",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 13010,
+   "file": "okt_2025-08-21.json"
+  },
+  {
+   "id": "okt_2025-08-20",
+   "date": "2025-08-20",
+   "name": "1×30s + 1×35s + 3×5 min + 1×6 min + 1×8 min SS",
+   "type": "Sweet Spot",
+   "duration_s": 6780,
+   "file": "okt_2025-08-20.json"
+  },
+  {
+   "id": "okt_2025-08-17",
+   "date": "2025-08-17",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 10797,
+   "file": "okt_2025-08-17.json"
+  },
+  {
+   "id": "okt_2025-08-16",
+   "date": "2025-08-16",
+   "name": "1×5s + 1×15s + 2×20s + 1×40s + 1×1.7 min + 1×12 min + 1×8 min + 1×2.7 min + 1×18 min Tempo",
+   "type": "Tempo",
+   "duration_s": 20785,
+   "file": "okt_2025-08-16.json"
+  },
+  {
+   "id": "okt_2025-08-15",
+   "date": "2025-08-15",
+   "name": "3×10 min THP",
+   "type": "Terskel",
+   "duration_s": 7630,
+   "file": "okt_2025-08-15.json"
+  },
+  {
+   "id": "okt_2025-08-14",
+   "date": "2025-08-14",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8007,
+   "file": "okt_2025-08-14.json"
+  },
+  {
+   "id": "okt_2025-08-13",
+   "date": "2025-08-13",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10653,
+   "file": "okt_2025-08-13.json"
+  },
+  {
+   "id": "okt_2025-08-08",
+   "date": "2025-08-08",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8124,
+   "file": "okt_2025-08-08.json"
+  },
+  {
+   "id": "okt_2025-08-06",
+   "date": "2025-08-06",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 11703,
+   "file": "okt_2025-08-06.json"
+  },
+  {
+   "id": "okt_2025-08-03",
+   "date": "2025-08-03",
+   "name": "3×31 min + 1×20 min + 1×11 min Tempo + Løp",
+   "type": "Tempo",
+   "duration_s": 12486,
+   "file": "okt_2025-08-03.json"
+  },
+  {
+   "id": "okt_2025-08-02",
+   "date": "2025-08-02",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 17142,
+   "file": "okt_2025-08-02.json"
+  },
+  {
+   "id": "okt_2025-07-31",
+   "date": "2025-07-31",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 13427,
+   "file": "okt_2025-07-31.json"
+  },
+  {
+   "id": "okt_2025-07-30",
+   "date": "2025-07-30",
+   "name": "Endurance + Løp",
+   "type": "Endurance",
+   "duration_s": 6718,
+   "file": "okt_2025-07-30.json"
+  },
+  {
+   "id": "okt_2025-07-29",
+   "date": "2025-07-29",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6323,
+   "file": "okt_2025-07-29.json"
+  },
+  {
+   "id": "okt_2025-07-26",
+   "date": "2025-07-26",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 27068,
+   "file": "okt_2025-07-26.json"
+  },
+  {
+   "id": "okt_2025-07-25",
+   "date": "2025-07-25",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 34443,
+   "file": "okt_2025-07-25.json"
+  },
+  {
+   "id": "okt_2025-07-24",
+   "date": "2025-07-24",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 21256,
+   "file": "okt_2025-07-24.json"
+  },
+  {
+   "id": "okt_2025-07-23",
+   "date": "2025-07-23",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 26722,
+   "file": "okt_2025-07-23.json"
+  },
+  {
+   "id": "okt_2025-07-21",
+   "date": "2025-07-21",
+   "name": "Endurance + Endurance",
+   "type": "Endurance",
+   "duration_s": 23247,
+   "file": "okt_2025-07-21.json"
+  },
+  {
+   "id": "okt_2025-07-20",
+   "date": "2025-07-20",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 35831,
+   "file": "okt_2025-07-20.json"
+  },
+  {
+   "id": "okt_2025-07-19",
+   "date": "2025-07-19",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 29549,
+   "file": "okt_2025-07-19.json"
+  },
+  {
+   "id": "okt_2025-07-18",
+   "date": "2025-07-18",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 27054,
+   "file": "okt_2025-07-18.json"
+  },
+  {
+   "id": "okt_2025-07-16",
+   "date": "2025-07-16",
+   "name": "9×4 min + 1×3.8 min THP",
+   "type": "Terskel",
+   "duration_s": 9377,
+   "file": "okt_2025-07-16.json"
+  },
+  {
+   "id": "okt_2025-07-15",
+   "date": "2025-07-15",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 14613,
+   "file": "okt_2025-07-15.json"
+  },
+  {
+   "id": "okt_2025-07-14",
+   "date": "2025-07-14",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8885,
+   "file": "okt_2025-07-14.json"
+  },
+  {
+   "id": "okt_2025-07-12",
+   "date": "2025-07-12",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10964,
+   "file": "okt_2025-07-12.json"
+  },
+  {
+   "id": "okt_2025-07-07",
+   "date": "2025-07-07",
+   "name": "1×2.3 min + 8×4 min + 1×4.3 min THP",
+   "type": "Terskel",
+   "duration_s": 10814,
+   "file": "okt_2025-07-07.json"
+  },
+  {
+   "id": "okt_2025-07-06",
+   "date": "2025-07-06",
+   "name": "1×8 min THP",
+   "type": "Terskel",
+   "duration_s": 6478,
+   "file": "okt_2025-07-06.json"
+  },
+  {
+   "id": "okt_2025-07-04",
+   "date": "2025-07-04",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10912,
+   "file": "okt_2025-07-04.json"
+  },
+  {
+   "id": "okt_2025-07-03",
+   "date": "2025-07-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 4701,
+   "file": "okt_2025-07-03.json"
+  },
+  {
+   "id": "okt_2025-07-02",
+   "date": "2025-07-02",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 6216,
+   "file": "okt_2025-07-02.json"
+  },
+  {
+   "id": "okt_2025-07-01",
+   "date": "2025-07-01",
+   "name": "2×2.4 min + 1×6 min + 1×4 min THP",
+   "type": "Terskel",
+   "duration_s": 6331,
+   "file": "okt_2025-07-01.json"
+  },
+  {
+   "id": "okt_2025-06-30",
+   "date": "2025-06-30",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 5201,
+   "file": "okt_2025-06-30.json"
+  },
+  {
+   "id": "okt_2025-06-26",
+   "date": "2025-06-26",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 4875,
+   "file": "okt_2025-06-26.json"
+  },
+  {
+   "id": "okt_2025-06-25",
+   "date": "2025-06-25",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 4195,
+   "file": "okt_2025-06-25.json"
+  },
+  {
+   "id": "okt_2025-06-22",
+   "date": "2025-06-22",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 11993,
+   "file": "okt_2025-06-22.json"
+  },
+  {
+   "id": "okt_2025-06-21_2",
+   "date": "2025-06-21",
+   "name": "1×18 min THP + Recovery",
+   "type": "Terskel",
+   "duration_s": 2570,
+   "file": "okt_2025-06-21_2.json"
+  },
+  {
+   "id": "okt_2025-06-21",
+   "date": "2025-06-21",
+   "name": "1×18 min THP + Recovery",
+   "type": "Terskel",
+   "duration_s": 32768,
+   "file": "okt_2025-06-21.json"
+  },
+  {
+   "id": "okt_2025-06-20_2",
+   "date": "2025-06-20",
+   "name": "1×1.7 min + 1×2.2 min + 14×4 min THP + Recovery",
+   "type": "Terskel",
+   "duration_s": 2614,
+   "file": "okt_2025-06-20_2.json"
+  },
+  {
+   "id": "okt_2025-06-20",
+   "date": "2025-06-20",
+   "name": "1×1.7 min + 1×2.2 min + 14×4 min THP + Recovery",
+   "type": "Terskel",
+   "duration_s": 12357,
+   "file": "okt_2025-06-20.json"
+  },
+  {
+   "id": "okt_2025-06-16",
+   "date": "2025-06-16",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 4228,
+   "file": "okt_2025-06-16.json"
+  },
+  {
+   "id": "okt_2025-06-15",
+   "date": "2025-06-15",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 14829,
+   "file": "okt_2025-06-15.json"
+  },
+  {
+   "id": "okt_2025-06-14",
+   "date": "2025-06-14",
+   "name": "1×12 min + 1×17 min + 1×11 min + 1×10s + 1×25s + 2×30 min + 1×35s Tempo",
+   "type": "Tempo",
+   "duration_s": 18338,
+   "file": "okt_2025-06-14.json"
+  },
+  {
+   "id": "okt_2025-06-13",
+   "date": "2025-06-13",
+   "name": "12×4 min THP + Løp",
+   "type": "Terskel",
+   "duration_s": 6424,
+   "file": "okt_2025-06-13.json"
+  },
+  {
+   "id": "okt_2025-06-12",
+   "date": "2025-06-12",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 10819,
+   "file": "okt_2025-06-12.json"
+  },
+  {
+   "id": "okt_2025-06-04",
+   "date": "2025-06-04",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 6767,
+   "file": "okt_2025-06-04.json"
+  },
+  {
+   "id": "okt_2025-06-03",
+   "date": "2025-06-03",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8185,
+   "file": "okt_2025-06-03.json"
+  },
+  {
+   "id": "okt_2025-06-02",
+   "date": "2025-06-02",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 4531,
+   "file": "okt_2025-06-02.json"
+  },
+  {
+   "id": "okt_2025-05-31",
+   "date": "2025-05-31",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8599,
+   "file": "okt_2025-05-31.json"
+  },
+  {
+   "id": "okt_2025-05-26",
+   "date": "2025-05-26",
+   "name": "Løp + Endurance",
+   "type": "Endurance",
+   "duration_s": 5325,
+   "file": "okt_2025-05-26.json"
+  }
+ ]
+}

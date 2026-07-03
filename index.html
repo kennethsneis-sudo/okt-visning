@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Øktvisning</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uplot@1.6.31/dist/uPlot.min.css">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --line:#262b36; --txt:#e7e9ee; --muted:#8b93a3;
+    --p:#e11cd6; --hr:#ff5a36; --a1:#22b573; --p2:#9b12a0; --hr2:#c23a1e;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--txt);
+    font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  header{padding:12px 14px 8px;border-bottom:1px solid var(--line)}
+  h1{font-size:17px;margin:0;font-weight:650;letter-spacing:.2px}
+  .sub{color:var(--muted);font-size:12px;margin-top:2px}
+  .wrap{padding:10px 12px 40px;max-width:1200px;margin:0 auto}
+  .controls{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:12px}
+  select{background:#0c0e12;color:var(--txt);border:1px solid var(--line);border-radius:8px;
+    padding:8px 10px;font-size:14px;min-width:230px;max-width:100%}
+  .toggles{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;font-size:12.5px;color:var(--muted)}
+  label.tg{display:inline-flex;gap:5px;align-items:center;cursor:pointer;user-select:none}
+  label.tg input{accent-color:#5b8def}
+  button{background:#0c0e12;color:var(--txt);border:1px solid var(--line);border-radius:8px;
+    padding:7px 12px;font-size:13px;cursor:pointer}
+  button:hover{border-color:#3a4252}
+  .hint{color:var(--muted);font-size:11.5px;margin:-4px 2px 10px}
+  #chart{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 8px 2px}
+  .cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .card h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  th,td{text-align:right;padding:5px 4px;font-size:14px}
+  th:first-child,td:first-child{text-align:left;color:var(--muted);font-weight:500}
+  thead th{font-size:11px;color:var(--muted);border-bottom:1px solid var(--line)}
+  .dotp{color:var(--p)} .dothr{color:var(--hr)} .dota1{color:var(--a1)}
+  .flag{color:#e0b13a;font-size:11.5px;margin-top:8px;line-height:1.35}
+  .err{color:#ff6b5b;padding:14px;font-size:14px}
+  /* uPlot legend tweak */
+  .u-legend{font-size:12.5px}
+  .u-legend .u-marker{width:12px;height:12px}
+  @media(max-width:560px){ select{min-width:100%} h1{font-size:16px} }
+</style>
+</head>
+<body>
+<header>
+  <h1>Øktvisning</h1>
+  <div class="sub">Watt · HR (10s snitt) · DFA α1 — hele økta, zoom for detalj</div>
+</header>
+<div class="wrap">
+  <div class="controls">
+    <select id="picker" aria-label="Velg økt"></select>
+    <div class="toggles" id="toggles"></div>
+    <button id="reset" title="Nullstill zoom">Nullstill zoom</button>
+  </div>
+  <div class="hint" id="winhint"></div>
+  <div id="chart"></div>
+  <div id="summary"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/uplot@1.6.31/dist/uPlot.iife.min.js"></script>
+<script>
+"use strict";
+const COL={p:"#e11cd6",hr:"#ff5a36",a1:"#22b573",p2:"#9b12a0",hr2:"#c23a1e"};
+const A1_REF=1.0;   // fast, intensitets-/tids-/enhets-uavhengig DFA-landemerke (1/f-grensen). Aldri sonebasert.
+const state={manifest:null,data:null,u:null,ref:{a1:true}};
+
+/* ---------- utils ---------- */
+function fmtClock(s){s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),ss=s%60;
+  return (h?h+":"+String(m).padStart(2,"0"):m)+":"+String(ss).padStart(2,"0");}
+function fmtDate(iso){const[y,m,d]=iso.split("-");return d+"."+m+"."+y;}
+function avg(a){const v=a.filter(x=>x!=null);return v.length?v.reduce((s,x)=>s+x,0)/v.length:null;}
+function num(x,dec){return x==null?"–":x.toFixed(dec);}
+
+/* ---------- load ---------- */
+async function getJSON(url){
+  const r=await fetch(url+(url.includes("?")?"":"?t="+Date.now()),{cache:"no-store"});
+  if(!r.ok) throw new Error(r.status); return r.json();
+}
+async function boot(){
+  let mani;
+  try{ mani=await getJSON("./manifest.json"); }
+  catch(e){ mani=fallbackManifest(); }        // lokal file://-forhåndsvisning
+  state.manifest=mani;
+  document.getElementById("winhint").textContent=mani.alpha1_note||"";
+  buildToggles();
+  const pk=document.getElementById("picker"); pk.innerHTML="";
+  mani.sessions.forEach((s,i)=>{
+    const o=document.createElement("option");
+    o.value=i; o.textContent=fmtDate(s.date)+" · "+s.name+" · "+s.type;
+    pk.appendChild(o);
+  });
+  pk.onchange=()=>select(+pk.value);
+  if(mani.sessions.length) select(0);
+}
+async function select(i){
+  const s=state.manifest.sessions[i];
+  const chart=document.getElementById("chart");
+  try{
+    let d;
+    try{ d=await getJSON("./"+s.file); }
+    catch(e){ d=s._demo||fallbackSession(s); }   // demo-fallback
+    state.data=d; render(d);
+  }catch(e){ chart.innerHTML='<div class="err">Kunne ikke laste økta ('+s.file+').</div>'; }
+}
+
+/* ---------- chart ---------- */
+function drawRefLines(u){
+  if(!state.ref.a1) return;
+  const ctx=u.ctx,bb=u.bbox,sc=u.scales.a1;
+  if(sc.min==null||sc.max==null) return;
+  let v=A1_REF,clamped=false;
+  if(v<sc.min){v=sc.min;clamped=true;} else if(v>sc.max){v=sc.max;clamped=true;}
+  const y=u.valToPos(v,"a1",true);
+  ctx.save();
+  ctx.setLineDash([5,4]); ctx.lineWidth=1; ctx.strokeStyle=COL.a1; ctx.globalAlpha=clamped?0.30:0.7;
+  ctx.beginPath(); ctx.moveTo(bb.left,y); ctx.lineTo(bb.left+bb.width,y); ctx.stroke();
+  ctx.setLineDash([]); ctx.globalAlpha=1; ctx.fillStyle=COL.a1; ctx.font="10px system-ui";
+  ctx.fillText("α1 = 1,0"+(clamped?" ↕":""), bb.left+5, (y-4<bb.top+9)?y+12:y-4);
+  ctx.restore();
+}
+function render(d){
+  const el=document.getElementById("chart");
+  if(state.u){state.u.destroy(); state.u=null;} el.innerHTML="";
+  const data=[d.t, d.power, d.hr, d.alpha1];
+  const W=Math.max(320, el.clientWidth-16);
+  const H=Math.max(340, Math.round(Math.min(560, window.innerHeight*0.6)));
+  const opts={
+    width:W,height:H,
+    cursor:{drag:{x:true,y:false},focus:{prox:24}},
+    legend:{live:true},
+    scales:{x:{time:false}, W:{auto:true}, bpm:{auto:true}, a1:{auto:true}},
+    series:[
+      {value:(u,v)=>v==null?"--":fmtClock(v)},
+      {label:"Watt",scale:"W",stroke:COL.p,width:1.1,points:{show:false},
+        value:(u,v)=>v==null?"--":Math.round(v)+" W"},
+      {label:"HR",scale:"bpm",stroke:COL.hr,width:1.1,points:{show:false},
+        value:(u,v)=>v==null?"--":Math.round(v)+" bpm"},
+      {label:"α1",scale:"a1",stroke:COL.a1,width:1.3,points:{show:false},spanGaps:false,
+        value:(u,v)=>v==null?"--":v.toFixed(3)},
+    ],
+    axes:[
+      {stroke:"#8b93a3",grid:{stroke:"#20242e",width:1},ticks:{stroke:"#20242e"},
+        values:(u,vals)=>vals.map(fmtClock)},
+      {scale:"W",side:3,stroke:COL.p,grid:{stroke:"#20242e",width:1},
+        values:(u,vals)=>vals.map(v=>Math.round(v))},
+      {scale:"bpm",side:1,stroke:COL.hr,grid:{show:false},
+        values:(u,vals)=>vals.map(v=>Math.round(v))},
+      {scale:"a1",side:1,stroke:COL.a1,grid:{show:false},size:52,
+        values:(u,vals)=>vals.map(v=>v.toFixed(2))},
+    ],
+    hooks:{draw:[drawRefLines]},
+  };
+  state.u=new uPlot(opts,data,el);
+  renderSummary(d);
+}
+document.getElementById("reset").onclick=()=>{ if(state.u){const x=state.data.t;
+  state.u.setScale("x",{min:x[0],max:x[x.length-1]});}};
+window.addEventListener("resize",()=>{ if(state.u){const el=document.getElementById("chart");
+  state.u.setSize({width:Math.max(320,el.clientWidth-16),
+    height:Math.max(340,Math.round(Math.min(560,window.innerHeight*0.6)))});}});
+
+/* ---------- toggles ---------- */
+function buildToggles(){
+  const box=document.getElementById("toggles");
+  box.innerHTML="Ref-linje: ";
+  const l=document.createElement("label"); l.className="tg";
+  const c=document.createElement("input"); c.type="checkbox"; c.checked=state.ref.a1;
+  c.onchange=()=>{state.ref.a1=c.checked; if(state.u) state.u.redraw();};
+  l.appendChild(c); l.appendChild(document.createTextNode("α1 = 1,0 (fast)")); box.appendChild(l);
+}
+
+/* ---------- summary ---------- */
+function renderSummary(d){
+  const t=d.t, mid=t[0]+(t[t.length-1]-t[0])/2;
+  const idx=t.map((_,i)=>i);
+  const first=idx.filter(i=>t[i]<=mid), second=idx.filter(i=>t[i]>mid);
+  const pick=(ix,k)=>avg(ix.map(i=>d[k][i]));
+  const rows=[
+    ["Hele",   avg(d.power),      avg(d.hr),      avg(d.alpha1)],
+    ["1. halvdel", pick(first,"power"), pick(first,"hr"), pick(first,"alpha1")],
+    ["2. halvdel", pick(second,"power"),pick(second,"hr"),pick(second,"alpha1")],
+  ];
+  const softA1=!["Recovery","Endurance"].includes(d.type);
+  const dur=fmtClock(t[t.length-1]-t[0]);
+  let html='<div class="cardgrid">';
+  html+='<div class="card"><h3>'+fmtDate(d.date)+' · '+d.name+'</h3>'
+      +'<table><thead><tr><th></th>'
+      +'<th class="dotp">Watt</th><th class="dothr">HR</th><th class="dota1">α1'+(softA1?'*':'')+'</th></tr></thead><tbody>';
+  rows.forEach(r=>{html+='<tr><td>'+r[0]+'</td><td>'+num(r[1],0)+'</td><td>'+num(r[2],0)+'</td><td>'+num(r[3],3)+'</td></tr>';});
+  html+='</tbody></table>';
+  html+='<div class="flag" style="color:var(--muted)">Type: '+d.type+' · varighet '+dur
+      +' · α1-vindu '+(d.alpha1_window_s||120)+'s</div>';
+  if(softA1) html+='<div class="flag">* α1-snitt er et svakt mål på tempo/SS/terskel — '
+      +'α1 ligger lavt og støyfølsomt her; les trace-en, ikke snittet.</div>';
+  html+='</div></div>';
+  document.getElementById("summary").innerHTML=html;
+}
+
+/* ---------- fallback demo (kun ved file://) ---------- */
+function fallbackManifest(){
+  return {app:"Øktvisning",
+    alpha1_note:"Demo-data (lokal forhåndsvisning). Reelle økter lastes fra manifest.json når appen er publisert.",
+    sessions:[{id:"demo",date:"2026-06-15",name:"Endurance 2t (demo)",type:"Endurance",duration_s:7200,file:"demo",_demo:fallbackSession()}]};
+}
+function fallbackSession(){
+  const n=720,t=[],p=[],hr=[],a1=[]; let pv=225,hv=132;
+  for(let i=0;i<n;i++){t.push(i*10);
+    pv=pv*0.85+225*0.15+(Math.random()-0.5)*14; p.push(Math.max(0,Math.round(pv+(Math.random()-0.5)*30)));
+    hv=hv*0.9+(132+4*Math.sin(i/n*Math.PI))*0.1+(Math.random()-0.5)*4; hr.push(+(Math.max(60,hv)).toFixed(1));
+    let v=1.02-0.06*((p[i]-225)/22)+(Math.random()-0.5)*0.16; v=Math.max(.4,Math.min(1.55,v));
+    a1.push(Math.random()<0.04?null:+v.toFixed(3));}
+  return {id:"demo",date:"2026-06-15",name:"Endurance 2t (demo)",type:"Endurance",alpha1_window_s:120,t,power:p,hr,alpha1:a1};
+}
+
+if(window.uPlot) boot();
+else document.getElementById("chart").innerHTML='<div class="err">uPlot lastet ikke (offline?). Åpne siden med nett tilgjengelig.</div>';
+</script>
+</body>
+</html>
