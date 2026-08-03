@@ -4,6 +4,134 @@
  "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
  "sessions": [
   {
+   "id": "okt_2026-08-02",
+   "date": "2026-08-02",
+   "name": "2×5 min + 1×3 min + 2×15 min + 1×10 min + 1×10s SS",
+   "type": "Sweet Spot",
+   "duration_s": 11128,
+   "file": "okt_2026-08-02.json"
+  },
+  {
+   "id": "okt_2026-07-29",
+   "date": "2026-07-29",
+   "name": "Day off",
+   "type": "Recovery",
+   "duration_s": 7729,
+   "file": "okt_2026-07-29.json"
+  },
+  {
+   "id": "okt_2026-07-24",
+   "date": "2026-07-24",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7769,
+   "file": "okt_2026-07-24.json"
+  },
+  {
+   "id": "okt_2026-07-23",
+   "date": "2026-07-23",
+   "name": "1×4 min + 1×3 min + 14×30s + 13×25s SS",
+   "type": "Sweet Spot",
+   "duration_s": 7238,
+   "file": "okt_2026-07-23.json"
+  },
+  {
+   "id": "okt_2026-07-22",
+   "date": "2026-07-22",
+   "name": "Day off",
+   "type": "Recovery",
+   "duration_s": 8041,
+   "file": "okt_2026-07-22.json"
+  },
+  {
+   "id": "okt_2026-07-20",
+   "date": "2026-07-20",
+   "name": "Day off",
+   "type": "Recovery",
+   "duration_s": 4008,
+   "file": "okt_2026-07-20.json"
+  },
+  {
+   "id": "okt_2026-07-18",
+   "date": "2026-07-18",
+   "name": "Solid Endurance (250-260w, HR138-142, Alpha 0,95-1)",
+   "type": "Endurance",
+   "duration_s": 7348,
+   "file": "okt_2026-07-18.json"
+  },
+  {
+   "id": "okt_2026-07-17",
+   "date": "2026-07-17",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6951,
+   "file": "okt_2026-07-17.json"
+  },
+  {
+   "id": "okt_2026-07-15",
+   "date": "2026-07-15",
+   "name": "Endurance low",
+   "type": "Endurance",
+   "duration_s": 6196,
+   "file": "okt_2026-07-15.json"
+  },
+  {
+   "id": "okt_2026-07-13",
+   "date": "2026-07-13",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 6504,
+   "file": "okt_2026-07-13.json"
+  },
+  {
+   "id": "okt_2026-07-12",
+   "date": "2026-07-12",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 7646,
+   "file": "okt_2026-07-12.json"
+  },
+  {
+   "id": "okt_2026-07-09",
+   "date": "2026-07-09",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 6400,
+   "file": "okt_2026-07-09.json"
+  },
+  {
+   "id": "okt_2026-07-08",
+   "date": "2026-07-08",
+   "name": "1×5s + 1×6 min + 32×30s + 1×50s SS",
+   "type": "Sweet Spot",
+   "duration_s": 10201,
+   "file": "okt_2026-07-08.json"
+  },
+  {
+   "id": "okt_2026-07-06",
+   "date": "2026-07-06",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 5716,
+   "file": "okt_2026-07-06.json"
+  },
+  {
+   "id": "okt_2026-07-03",
+   "date": "2026-07-03",
+   "name": "Endurance 2h Z2 m 3×12s openers",
+   "type": "Endurance",
+   "duration_s": 8803,
+   "file": "okt_2026-07-03.json"
+  },
+  {
+   "id": "okt_2026-07-02",
+   "date": "2026-07-02",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 6327,
+   "file": "okt_2026-07-02.json"
+  },
+  {
    "id": "okt_2026-07-01",
    "date": "2026-07-01",
    "name": "Endurance",
