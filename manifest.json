@@ -1,8 +1,96 @@
 {
- "generated": "2026-08-06",
+ "generated": "2026-08-19",
  "app": "Øktvisning",
  "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
  "sessions": [
+  {
+   "id": "okt_2026-08-17",
+   "date": "2026-08-17",
+   "name": "Endurance low",
+   "type": "Recovery",
+   "duration_s": 4048,
+   "file": "okt_2026-08-17.json"
+  },
+  {
+   "id": "okt_2026-08-16",
+   "date": "2026-08-16",
+   "name": "1x45 @325-335",
+   "type": "Terskel",
+   "duration_s": 18336,
+   "file": "okt_2026-08-16.json"
+  },
+  {
+   "id": "okt_2026-08-15",
+   "date": "2026-08-15",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 9840,
+   "file": "okt_2026-08-15.json"
+  },
+  {
+   "id": "okt_2026-08-14",
+   "date": "2026-08-14",
+   "name": "Solid Endurance (250-260w, HR138-142, Alpha 0,95-1)",
+   "type": "Endurance",
+   "duration_s": 8818,
+   "file": "okt_2026-08-14.json"
+  },
+  {
+   "id": "okt_2026-08-13",
+   "date": "2026-08-13",
+   "name": "Endurance low",
+   "type": "Recovery",
+   "duration_s": 8011,
+   "file": "okt_2026-08-13.json"
+  },
+  {
+   "id": "okt_2026-08-12",
+   "date": "2026-08-12",
+   "name": "THP pyramide 30-20-10-20-30 @315-325-340-325-315W",
+   "type": "Terskel",
+   "duration_s": 15105,
+   "file": "okt_2026-08-12.json"
+  },
+  {
+   "id": "okt_2026-08-10",
+   "date": "2026-08-10",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 3601,
+   "file": "okt_2026-08-10.json"
+  },
+  {
+   "id": "okt_2026-08-07",
+   "date": "2026-08-07",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7600,
+   "file": "okt_2026-08-07.json"
+  },
+  {
+   "id": "okt_2026-08-05",
+   "date": "2026-08-05",
+   "name": "Over-under 3×15 min: [3 min @ 345W / 3 min @ 305W], 5 min pause",
+   "type": "Terskel",
+   "duration_s": 8831,
+   "file": "okt_2026-08-05.json"
+  },
+  {
+   "id": "okt_2026-08-04",
+   "date": "2026-08-04",
+   "name": "Over-under 3×20 min: [3 min @ 345-355W / 2 min @ 300W], 6 min pause",
+   "type": "Terskel",
+   "duration_s": 9935,
+   "file": "okt_2026-08-04.json"
+  },
+  {
+   "id": "okt_2026-08-03",
+   "date": "2026-08-03",
+   "name": "Recovery",
+   "type": "Recovery",
+   "duration_s": 3893,
+   "file": "okt_2026-08-03.json"
+  },
   {
    "id": "okt_2026-08-02",
    "date": "2026-08-02",
