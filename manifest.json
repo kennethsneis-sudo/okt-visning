@@ -12,12 +12,60 @@
    "file": "okt_2026-09-02.json"
   },
   {
+   "id": "okt_2026-09-01",
+   "date": "2026-09-01",
+   "name": "3-6h rolig Endurance",
+   "type": "Endurance",
+   "duration_s": 24454,
+   "file": "okt_2026-09-01.json"
+  },
+  {
+   "id": "okt_2026-08-31",
+   "date": "2026-08-31",
+   "name": "3-6h rolig Endurance",
+   "type": "Endurance",
+   "duration_s": 23990,
+   "file": "okt_2026-08-31.json"
+  },
+  {
+   "id": "okt_2026-08-29",
+   "date": "2026-08-29",
+   "name": "3×2 min VO2",
+   "type": "Endurance",
+   "duration_s": 14385,
+   "file": "okt_2026-08-29.json"
+  },
+  {
+   "id": "okt_2026-08-26",
+   "date": "2026-08-26",
+   "name": "3×2 min VO2",
+   "type": "Endurance",
+   "duration_s": 7959,
+   "file": "okt_2026-08-26.json"
+  },
+  {
    "id": "okt_2026-08-25",
    "date": "2026-08-25",
    "name": "Endurance",
    "type": "Endurance",
    "duration_s": 7690,
    "file": "okt_2026-08-25.json"
+  },
+  {
+   "id": "okt_2026-08-24",
+   "date": "2026-08-24",
+   "name": "3×30s FRC",
+   "type": "Endurance",
+   "duration_s": 7721,
+   "file": "okt_2026-08-24.json"
+  },
+  {
+   "id": "okt_2026-08-22",
+   "date": "2026-08-22",
+   "name": "3×2 min VO2",
+   "type": "Endurance",
+   "duration_s": 6644,
+   "file": "okt_2026-08-22.json"
   },
   {
    "id": "okt_2026-08-21",
