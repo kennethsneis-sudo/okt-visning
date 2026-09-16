@@ -1,13 +1,29 @@
 {
- "generated": "2026-09-07",
+ "generated": "2026-09-16",
  "app": "Øktvisning",
  "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
  "sessions": [
   {
+   "id": "okt_2026-09-10",
+   "date": "2026-09-10",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7077,
+   "file": "okt_2026-09-10.json"
+  },
+  {
+   "id": "okt_2026-09-08",
+   "date": "2026-09-08",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 7780,
+   "file": "okt_2026-09-08.json"
+  },
+  {
    "id": "okt_2026-09-02",
    "date": "2026-09-02",
-   "name": "Reisedag - kan trene kort tidlig",
-   "type": "Recovery",
+   "name": "Endurance",
+   "type": "Endurance",
    "duration_s": 11431,
    "file": "okt_2026-09-02.json"
   },
