@@ -1,8 +1,32 @@
 {
- "generated": "2026-09-16",
+ "generated": "2026-09-21",
  "app": "Øktvisning",
  "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
  "sessions": [
+  {
+   "id": "okt_2026-09-18",
+   "date": "2026-09-18",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8595,
+   "file": "okt_2026-09-18.json"
+  },
+  {
+   "id": "okt_2026-09-16",
+   "date": "2026-09-16",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 8943,
+   "file": "okt_2026-09-16.json"
+  },
+  {
+   "id": "okt_2026-09-11",
+   "date": "2026-09-11",
+   "name": "Pre race 90-120 min: - 2x2min@375, p4 + 3x12 sek openers",
+   "type": "Endurance",
+   "duration_s": 6936,
+   "file": "okt_2026-09-11.json"
+  },
   {
    "id": "okt_2026-09-10",
    "date": "2026-09-10",
@@ -10,6 +34,14 @@
    "type": "Endurance",
    "duration_s": 7077,
    "file": "okt_2026-09-10.json"
+  },
+  {
+   "id": "okt_2026-09-09",
+   "date": "2026-09-09",
+   "name": "1×3 min + 4×2 min @ ~400 W – avbrutt (syk)",
+   "type": "Endurance",
+   "duration_s": 6020,
+   "file": "okt_2026-09-09.json"
   },
   {
    "id": "okt_2026-09-08",
