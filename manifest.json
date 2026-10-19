@@ -1,8 +1,16 @@
 {
- "generated": "2026-10-12",
+ "generated": "2026-10-19",
  "app": "Øktvisning",
  "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
  "sessions": [
+  {
+   "id": "okt_2026-10-12",
+   "date": "2026-10-12",
+   "name": "Endurance",
+   "type": "Endurance",
+   "duration_s": 5159,
+   "file": "okt_2026-10-12.json"
+  },
   {
    "id": "okt_2026-10-05",
    "date": "2026-10-05",
