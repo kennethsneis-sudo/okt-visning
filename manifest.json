@@ -1,8 +1,24 @@
 {
- "generated": "2026-10-27",
+ "generated": "2026-11-02",
  "app": "Øktvisning",
  "alpha1_note": "120s-vindu for økter etter 16.05.2026, 60s t.o.m. 16.05.2026. Aldri blandet — hver økt bruker sitt eget vindu.",
  "sessions": [
+  {
+   "id": "okt_2026-11-01",
+   "date": "2026-11-01",
+   "name": "🏃 Løp 20 min rolig (HR <140) + \nLangtur 3:00 Z2 (200–250 W, HR 120–140, α1 0,9–1,2)",
+   "type": "Endurance",
+   "duration_s": 16010,
+   "file": "okt_2026-11-01.json"
+  },
+  {
+   "id": "okt_2026-10-31",
+   "date": "2026-10-31",
+   "name": "Endurance 1:45 (200–250 W, HR 120–140)",
+   "type": "Endurance",
+   "duration_s": 6610,
+   "file": "okt_2026-10-31.json"
+  },
   {
    "id": "okt_2026-10-12",
    "date": "2026-10-12",
